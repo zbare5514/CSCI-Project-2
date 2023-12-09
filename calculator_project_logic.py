@@ -2,7 +2,7 @@ from PyQt6.QtWidgets import *
 from calculator_gui import *
 
 
-def find_median(dataset):
+def find_median(dataset: list) -> float:
     """
     Static method for finding the median of a list
     Parameters: list
