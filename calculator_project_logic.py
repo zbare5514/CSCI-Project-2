@@ -329,10 +329,10 @@ class Calculator(QMainWindow, Ui_calculator_window):
         dataset = sorted(self.dataset)
         upper_data = dataset[len(dataset)//2:]
         if len(upper_data) % 2 == 0:
-            upper_data = dataset[(len(dataset) // 2) + 1:]
             self.answer_display.setText(str(find_median(upper_data)))
             pass
         else:
+            upper_data = dataset[(len(dataset) // 2) + 1:]
             self.answer_display.setText(str(find_median(upper_data)))
             pass
 
